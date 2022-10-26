@@ -1,0 +1,164 @@
+.seats-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.premium-container,
+.standard-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.premium-btns,
+.standard-btns {
+  width: 650px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  transform: rotate(180deg);
+}
+
+.premium-btns > button,
+.standard-btns > button {
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+  transition: 0.7s;
+  width: 50px;
+  transform: rotate(180deg);
+}
+
+.standard-btns > .booked-btn,
+.premium-btns > .booked-btn {
+  background-color: gray;
+  color: white;
+  border: 1px solid gray;
+  cursor: not-allowed;
+}
+
+.standard-btns > .select-btn,
+.premium-btns > .select-btn {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+
+.screen-container {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 60px;
+}
+
+.screen {
+  height: 50px;
+  width: 660px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(116, 204, 244, 0.2);
+}
+
+.seats-info {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.avail-btn {
+  background-color: white;
+  border: 1px solid orangered;
+}
+
+.not-avail-btn {
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+.selected-btn {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.selected-btn:hover,
+.not-avail-btn:hover,
+.avail-btn:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+.seat-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat-price > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.seat-details {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seat-details > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 > small {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: grey;
+}
+
+.no-access-seats {
+  opacity: 0.2;
+  /* font-size: 52px; */
+  color: "black";
+  background: "#ccc";
+  /* cursor: not-allowed; */
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.no-access-seats > .premium-btns > button,
+.no-access-seats > .standard-btns > button {
+  cursor: not-allowed;
+}
+
+.no-access-seats > .premium-btns > .select-btn,
+.no-access-seats > .standard-btns > .select-btn {
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+  cursor: not-allowed;
+}
